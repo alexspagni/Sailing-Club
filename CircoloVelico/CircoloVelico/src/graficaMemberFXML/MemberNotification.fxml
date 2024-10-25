@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="memberAnchorPaneNotification" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CircoloVelico.unipr.it.MemberNotificationController">
+   <children>
+      <TableView fx:id="memberNotificationPrintTableView" layoutX="2.0" layoutY="45.0" prefHeight="190.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="feeTypeColumn" prefWidth="304.66669726371765" text="type of fee" />
+            <TableColumn fx:id="feePriceColumn" prefWidth="285.3332824707031" text="price" />
+        </columns>
+      </TableView>
+      <TextArea layoutX="2.0" prefHeight="45.0" prefWidth="600.0" text="Here you can see all your notification about your fees" />
+      <Button layoutX="67.0" layoutY="340.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the main menu" />
+      <TextField fx:id="notificationSelectedTextField" layoutX="358.0" layoutY="278.0" />
+      <Label layoutX="67.0" layoutY="282.0" text="Notification selected" />
+      <Button layoutX="403.0" layoutY="340.0" mnemonicParsing="false" onAction="#removeNotification" text="Remove" />
+   </children>
+</AnchorPane>

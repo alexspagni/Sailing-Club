@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="memberSignInAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CircoloVelico.unipr.it.MemberSignController">
+   <children>
+      <Label layoutX="128.0" layoutY="111.0" text="Username" />
+      <Label layoutX="130.0" layoutY="162.0" text="Password" />
+      <TextField fx:id="userUsername" layoutX="319.0" layoutY="107.0" />
+      <Button layoutX="441.0" layoutY="300.0" mnemonicParsing="false" onAction="#signIn" text="Sign-In" />
+      <Button layoutX="51.0" layoutY="300.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the principal menu" />
+      <Label layoutX="221.0" layoutY="38.0" prefHeight="17.0" prefWidth="196.0" text="HERE YOU CAN SIGN IN" />
+      <TextField fx:id="codiceFiscaleTextField" layoutX="319.0" layoutY="200.0" />
+      <TextField fx:id="indirizzoTextField" layoutX="319.0" layoutY="239.0" />
+      <Label layoutX="130.0" layoutY="204.0" text="Fiscal code" />
+      <Label layoutX="130.0" layoutY="243.0" prefHeight="17.0" prefWidth="64.0" text="Address" />
+      <PasswordField fx:id="userPassword" layoutX="319.0" layoutY="149.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="staffAnchorPaneSendNotification" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="staff.unipr.it.StaffAddStorageFeeController">
+   <children>
+      <TableView fx:id="staffSendNotificationPrintTableView" layoutY="53.0" prefHeight="205.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="diColumnmember" prefWidth="150.66665649414062" text="idmember" />
+            <TableColumn fx:id="priceColumnstaff" prefWidth="136.66668701171875" text="fee price" />
+            <TableColumn fx:id="dateColumnstaff" prefWidth="144.6666259765625" text="fee year" />
+            <TableColumn fx:id="boatNameColumnstaff" prefWidth="164.66668701171875" text="Boat name" />
+        </columns>
+      </TableView>
+      <TextArea editable="false" layoutX="2.0" prefHeight="45.0" prefWidth="600.0" text="Here you can see all Storage fee whose haven't been send to the user yet.&#10;Select one of these fee to notify to a user that he has to pay it." />
+      <Button layoutX="27.0" layoutY="341.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the main menu" />
+      <Label layoutX="79.0" layoutY="275.0" text="User Selected" />
+      <TextField fx:id="userSelectedTextField" editable="false" layoutX="351.0" layoutY="271.0" />
+      <Button layoutX="397.0" layoutY="341.0" mnemonicParsing="false" onAction="#addFee" text="Add fee" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="memberAnchorPanePayMembershipFee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CircoloVelico.unipr.it.MemberPayMembershipFeeController">
+   <children>
+      <TableView fx:id="memberPayMembershipFeePrintTableView" layoutY="59.0" prefHeight="167.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="304.66669726371765" text="fee Date" />
+            <TableColumn fx:id="priceFeeColumn" prefWidth="285.3332824707031" text="Price" />
+        </columns>
+      </TableView>
+      <TextArea editable="false" layoutX="2.0" prefHeight="59.0" prefWidth="600.0" text="Here you can see all your membership fee and you can choose to pay one of them.&#10;Remember to choose a payment method, otherwise you will pay with the credit card, and to select a fee to pay" />
+      <Label layoutX="69.0" layoutY="300.0" prefHeight="29.0" prefWidth="82.0" text="Fee selected" />
+      <TextField fx:id="feeSelectedTextField" editable="false" layoutX="302.0" layoutY="300.0" />
+      <Button layoutX="396.0" layoutY="353.0" mnemonicParsing="false" onAction="#payFee" text="Pay fee" />
+      <Button layoutX="69.0" layoutY="353.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the main menu" />
+      <Label layoutX="69.0" layoutY="240.0" prefHeight="29.0" prefWidth="102.0" text="Payment method" />
+      <RadioButton fx:id="bonificoRadioButton" layoutX="300.0" layoutY="232.0" mnemonicParsing="false" text="Bonifico">
+         <toggleGroup>
+            <ToggleGroup fx:id="Payment" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="cartaDiCreditoRadioButton" layoutX="300.0" layoutY="260.0" mnemonicParsing="false" text="Carta di credito" toggleGroup="$Payment" />
+   </children>
+</AnchorPane>

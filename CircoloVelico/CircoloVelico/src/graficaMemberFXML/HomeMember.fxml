@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="memberHomeAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CircoloVelico.unipr.it.MemberHomeController">
+   <children>
+      <MenuBar layoutX="-1.0" layoutY="-2.0" prefHeight="41.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Add/Remove a boat">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addABoat" text="Add a boat" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeABoat" text="Remove a boat" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="See notifications">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#seeYourNotification" text="Notification" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Pay rent">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#payMemberShipRent" text="Pay membership fee" />
+                  <MenuItem mnemonicParsing="false" onAction="#payStorageRent" text="Pay boat fee" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="See race">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#joinARace" text="Join a race" />
+                  <MenuItem mnemonicParsing="false" onAction="#seeYourRace" text="See your races" />
+                  <MenuItem mnemonicParsing="false" onAction="#seeRaceWon" text="See race won" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="39.0" layoutY="321.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the main menu" />
+   </children>
+</AnchorPane>

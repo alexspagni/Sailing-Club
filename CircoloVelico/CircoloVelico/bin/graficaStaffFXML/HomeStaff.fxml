@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="homestaffAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="staff.unipr.it.HomeStaffController">
+   <children>
+      <MenuBar layoutX="-1.0" layoutY="-2.0" prefHeight="41.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="User Infomation">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#modifyMemberCredential" text="Modify member credential" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeAMember" text="Remove a member" />
+                  <MenuItem mnemonicParsing="false" onAction="#modifyBoatData" text="Manage boat data" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Race Information">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#modifyARace" text="Modify Race data" />
+                  <MenuItem mnemonicParsing="false" onAction="#addNewRace" text="Add new race" />
+                  <MenuItem mnemonicParsing="false" onAction="#simulateARace" text="Simulate a race" />
+                  <MenuItem mnemonicParsing="false" onAction="#seeAllRace" text="See all race" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Send notifycation">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#seeNotificationMembership" text="Send membership notification" />
+                  <MenuItem mnemonicParsing="false" onAction="#seeNotificationStorage" text="Send storage notification" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="See Payment">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#seeMembershipPayment" text="See membership payment" />
+                  <MenuItem mnemonicParsing="false" onAction="#seeStoragePayment" text="See storage payment" />
+                  <MenuItem mnemonicParsing="false" onAction="#seeRacePayment" text="See race payment" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Add Fee">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addMembershipPayment" text="Add membership fee" />
+                  <MenuItem mnemonicParsing="false" onAction="#addStoragePayment" text="Add storage fee" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="59.0" layoutY="313.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the main menu" />
+   </children>
+</AnchorPane>

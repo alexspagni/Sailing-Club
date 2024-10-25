@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="staffAnchorPaneSimulateRace" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="staff.unipr.it.StaffSeeAllRaceController">
+   <children>
+      <TableView fx:id="staffSimulateRacePrintTableView" layoutY="36.0" prefHeight="259.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="raceNameColumn" prefWidth="86.66668701171875" text="Race name" />
+          <TableColumn fx:id="racePlaceColumn" prefWidth="101.33328247070312" text="Race Place" />
+            <TableColumn fx:id="racePriceColumn" prefWidth="112.0" text="Race price" />
+            <TableColumn fx:id="raceDateColumn" prefWidth="96.66668701171875" text="Race Date" />
+            <TableColumn fx:id="raceWinnerIdColumn" prefWidth="68.66668701171875" text="idWinner" />
+            <TableColumn fx:id="raceWinnerNameColumn" prefWidth="132.0" text="Winner name" />
+        </columns>
+      </TableView>
+      <TextArea editable="false" layoutY="-9.0" prefHeight="45.0" prefWidth="600.0" text="Here you can see all the race palaied and who won them" />
+      <Button layoutX="77.0" layoutY="341.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the main menu" />
+   </children>
+</AnchorPane>

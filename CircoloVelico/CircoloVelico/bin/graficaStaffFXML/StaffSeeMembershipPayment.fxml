@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="staffAnchorPaneSeePayment" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="staff.unipr.it.StaffSeeMembershipPaymentController">
+   <children>
+      <TableView fx:id="staffSeePaymentPrintTableView" layoutX="2.0" layoutY="45.0" prefHeight="210.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="diColumnmember" prefWidth="113.99996948242188" text="idmember" />
+            <TableColumn fx:id="dateColumnstaff" prefWidth="103.3333740234375" text="Date" />
+            <TableColumn fx:id="priceColumnstaff" prefWidth="90.0" text="Price" />
+            <TableColumn fx:id="feeColumnPaied" prefWidth="121.33331298828125" text="Paied?" />
+            <TableColumn fx:id="paymentTypeColumn" prefWidth="171.3333740234375" text="Payment method" />
+        </columns>
+      </TableView>
+      <TextArea editable="false" layoutX="2.0" prefHeight="45.0" prefWidth="600.0" text="Here you can see all membership fee paied and who paied them" />
+      <Button layoutX="33.0" layoutY="324.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the main menu" />
+   </children>
+</AnchorPane>

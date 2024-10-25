@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="staffAnchorPaneModifyBoatData" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="staff.unipr.it.StaffModifyBoatData">
+   <children>
+      <TableView fx:id="staffModifyBoatDataPrintTableView" layoutX="2.0" layoutY="45.0" prefHeight="137.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="boatNameColumn" prefWidth="166.66668701171875" text="boat name" />
+          <TableColumn fx:id="memberIdColumnmember" prefWidth="166.66668701171875" text="member id" />
+            <TableColumn fx:id="boatLengthColumnstaff" prefWidth="118.6666259765625" text="length" />
+            <TableColumn fx:id="boatRimessaggioColumnstaff" prefWidth="176.66668701171875" text="rimessaggio" />
+        </columns>
+      </TableView>
+      <TextArea editable="false" layoutX="2.0" prefHeight="45.0" prefWidth="600.0" text="Here you can see modidy boat Data. In particular you can modify boat lenght and if it is in &quot;rimessaggio&quot; &#10;or not" />
+      <Button layoutX="63.0" layoutY="353.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the main menu" />
+      <Label layoutX="77.0" layoutY="200.0" text="Boat Selected" />
+      <TextField fx:id="boatSelectedTextField" editable="false" layoutX="341.0" layoutY="196.0" />
+      <Button layoutX="387.0" layoutY="353.0" mnemonicParsing="false" onAction="#changeBoatData" text="Change" />
+      <Label layoutX="77.0" layoutY="240.0" text="New length" />
+      <TextField fx:id="boatLengthTextField" layoutX="341.0" layoutY="236.0" />
+      <RadioButton fx:id="mettiInRimessaggioRadioButton" layoutX="73.0" layoutY="279.0" mnemonicParsing="false" text="Move to storage">
+         <toggleGroup>
+            <ToggleGroup fx:id="rimessaggio" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="togliDalRimessaggioRadioButton" layoutX="72.0" layoutY="309.0" mnemonicParsing="false" text="Remove from storage" toggleGroup="$rimessaggio" />
+   </children>
+</AnchorPane>

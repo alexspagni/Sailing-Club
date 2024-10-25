@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="memberAnchorPaneSeeRace" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CircoloVelico.unipr.it.MemberSeeRaceController">
+   <children>
+      <TableView fx:id="memberSeeRacePrintTableView" layoutX="2.0" layoutY="45.0" prefHeight="210.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="nameColumnRace" prefWidth="100.66665649414062" text="Race name" />
+            <TableColumn fx:id="luogoColumnRace" prefWidth="108.0" text="Place" />
+            <TableColumn fx:id="dateColumnRace" prefWidth="125.33331298828125" text="Date" />
+            <TableColumn fx:id="priceColumnRace" prefWidth="131.33331298828125" text="Price" />
+            <TableColumn fx:id="endedColumnRace" prefWidth="130.66668701171875" text="Ended?" />
+        </columns>
+      </TableView>
+      <TextArea layoutX="2.0" prefHeight="45.0" prefWidth="600.0" text="Here you can see all the race you joined" />
+      <Button layoutX="62.0" layoutY="319.0" mnemonicParsing="false" onAction="#backToPrincipalMenu" text="Back to the main menu" />
+   </children>
+</AnchorPane>
